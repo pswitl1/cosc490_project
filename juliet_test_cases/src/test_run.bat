@@ -1,0 +1,1 @@
+java -cp ..\lib\servlet-api.jar;..\lib\commons-lang2.5.jar;..\lib\commons-codec-1.5.jar;..\lib\javamail-1.4.4.jar;. testcases.CWE78_OS_Command_Injection.CWE78_OS_Command_Injection__console_readLine_01
