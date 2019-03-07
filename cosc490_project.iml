@@ -8,7 +8,7 @@
       <excludePattern pattern="ant*" />
       <excludePattern pattern="java*" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="1.6 (2)" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
