@@ -1,2 +1,5 @@
 *.class
 out/*
+juliet_test_cases/src/testcases/*.jar
+juliet_test_cases/src/testcases/*.war
+*/antbuild*
