@@ -10,5 +10,15 @@
     </content>
     <orderEntry type="jdk" jdkName="1.6 (2)" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/juliet_test_cases/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/juliet_test_cases/lib" recursive="false" />
+      </library>
+    </orderEntry>
   </component>
 </module>
