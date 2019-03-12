@@ -16,14 +16,16 @@ def main():
     parser.add_argument('--cwe_mappings', help='path/to/cwe/mapping/file', type=str, default='cwe_mappings.txt')
     parser.add_argument('--ruleset_template', help='path/to/ruleset/template/file', type=str,
                         default='ruleset_template.xml')
-    parser.add_argument('--pmd_exec', help='path/to/pmd/exec', type=str, default='..\..\pmd\pmd-dist\\target\pmd-bin-6.13.0-SNAPSHOT\\bin\pmd.bat')
+    parser.add_argument('--pmd_exec', help='path/to/pmd/exec', type=str,
+                        default='..\..\pmd\pmd-dist\\target\pmd-bin-6.13.0-SNAPSHOT\\bin\pmd.bat')
     parser.add_argument('--ruleset_outdir', help='path/to/ruleset_outdir', type=str, default='cwe_rulesets')
     parser.add_argument('-q', '--quiet', help='supress terminal output', action='store_true')
     args = validate_args(parser.parse_args())
 
     cwe_mappings = parse_cwe_mappings_file(args.cwe_mappings)
 
-    ruleset_files = [fout for fout in generate_rulesets(args.pmd_exec, args.test_cases, cwe_mappings, args.ruleset_template, args.ruleset_outdir)]
+    ruleset_files = [fout for fout in generate_rulesets(args.pmd_exec, args.test_cases, cwe_mappings,
+                                                        args.ruleset_template, args.ruleset_outdir)]
 
 
 def validate_args(args):
@@ -42,7 +44,7 @@ def validate_args(args):
 
     if os.path.isdir(args.ruleset_outdir):
         shutil.rmtree(args.ruleset_outdir)
-    os.makedirs(args.ruleset_outdir) #  TODO verify we can make ruleset outdir
+    os.makedirs(args.ruleset_outdir)  # TODO verify we can make ruleset outdir
 
     return args
 
@@ -83,7 +85,8 @@ def generate_rulesets(pmd_exec, test_cases, cwe_mappings, ruleset_template, rule
 
     ruleset_files = []
     for cwe in cwe_mappings.keys():
-        ruleset_files.append(generate_ruleset(pmd_exec, test_cases, cwe, cwe_mappings[cwe], ruleset_template, ruleset_outdir))
+        ruleset_files.append(generate_ruleset(pmd_exec, test_cases, cwe, cwe_mappings[cwe], ruleset_template,
+                                              ruleset_outdir))
     return ruleset_files
 
 
@@ -125,7 +128,7 @@ def run_pmd(pmd_exec, source, ruleset, output_file, output_type='text'):
     print(source)
     print(ruleset)
     subprocess.Popen(
-        [pmd_exec, '-d', source, '-R', ruleset, '-f', output_type])#, stdout=open(output_file, 'w'))
+        [pmd_exec, '-d', source, '-R', ruleset, '-f', output_type], stdout=open(output_file, 'w'))
 
 
 def check_exists(path, desc, check_file=True, quiet=False):
