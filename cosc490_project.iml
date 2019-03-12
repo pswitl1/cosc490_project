@@ -9,7 +9,7 @@
       <excludePattern pattern="ant*" />
       <excludePattern pattern="java*" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 3.2" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
       <library>

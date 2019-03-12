@@ -24,9 +24,11 @@ def main():
 
     cwe_mappings = parse_cwe_mappings_file(args.cwe_mappings)
 
-    ruleset_files = [fout for fout in generate_rulesets(args.pmd_exec, args.test_cases, cwe_mappings,
-                                                        args.ruleset_template, args.ruleset_outdir)]
+    generate_rulesets(args.pmd_exec, args.test_cases, cwe_mappings, args.ruleset_template, args.ruleset_outdir)
 
+    for fout in os.listdir(args.ruleset_outdir):
+        if fout.find('.csv') > -1:
+            analyze_file(fout)
 
 def validate_args(args):
     """
@@ -119,16 +121,32 @@ def generate_ruleset(pmd_exec, test_cases, cwe, cwe_rule_info, ruleset_template,
                         line = line.replace(key, replace_map[key])
                 fout.write(line)
 
-    run_pmd(pmd_exec, os.path.join(test_cases, cwe_name), ruleset_file, ruleset_file.replace('_ruleset.xml', '_output.txt'))
+    run_pmd(pmd_exec, os.path.join(test_cases, cwe_name), ruleset_file, ruleset_file.replace('_ruleset.xml', '_output.csv'))
 
 
-def run_pmd(pmd_exec, source, ruleset, output_file, output_type='text'):
+def run_pmd(pmd_exec, source, ruleset, output_file, output_type='csv'):
 
-    print(pmd_exec)
-    print(source)
-    print(ruleset)
-    subprocess.Popen(
-        [pmd_exec, '-d', source, '-R', ruleset, '-f', output_type], stdout=open(output_file, 'w'))
+    cmd = []
+    cmd.append(pmd_exec)
+    cmd.append('-d')
+    cmd.append(source)
+    cmd.append('-R')
+    cmd.append(ruleset)
+    cmd.append('-f')
+    cmd.append(output_type)
+    cmd.append('-property')
+    cmd.append('package=false')
+    cmd.append('-property')
+    cmd.append('priority=false')
+    cmd.append('-property')
+    cmd.append('desc=false')
+    cmd.append('-property')
+    cmd.append('ruleSet=false')
+    subprocess.Popen(cmd, stdout=open(output_file, 'w'))
+
+
+def analyze_file(fout):
+    pass  # TODO
 
 
 def check_exists(path, desc, check_file=True, quiet=False):
