@@ -5,4 +5,4 @@ juliet_test_cases/src/testcases/*.war
 */antbuild*
 *.csv
 *.pyc
-pmd_analysis/cwe_rulesets
+pmd_analysis/outdir
