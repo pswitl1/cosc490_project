@@ -208,7 +208,7 @@ class AnalyzeJuliet(object):
                 elif num_lines == 1:
                     results['failed'].append(result[:len(result) - 4])
                 else:
-                    results['extra'].append(results[:len(result) - 4])
+                    results['extra'].append(result[:len(result) - 4])
 
         # write results file
         with open(os.path.join(cwe_outdir, 'results.txt'), 'w') as fout:
