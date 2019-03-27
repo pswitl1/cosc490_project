@@ -50,11 +50,23 @@ class AnalyzeJuliet(object):
             # analyze all tests from this cwe
             AnalyzeJuliet.analyze_cwe(cwe_outdir)
 
-        # TODO analyze all cwes together
-        # self.analyze_cwes
+        self.analyze_all()
 
         # time
         print('\nAnalyzeJuliet took %.2f seconds to complete.' % (time.time() - start))
+
+    def analyze_all(self):
+        with open(os.path.join(self.outdir, 'results.txt'), 'w') as fout:
+            fout.write('CWE Results\n\n')
+            for cwe_outdir in os.listdir(self.outdir):
+                cwe_outdir = os.path.join(self.outdir, cwe_outdir)
+                if os.path.isdir(cwe_outdir):
+                    results_file = os.path.join(cwe_outdir, 'results.txt')
+                    if os.path.exists(results_file):
+                        fout.write('%s\n' % os.path.basename(cwe_outdir))
+                        with open(results_file, 'r') as fin:
+                            lines = fin.readlines()
+                            fout.write('%s%s\n' % (lines[1], lines[2]))
 
     def get_cwe_name(self, cwe_id):
         """
@@ -214,7 +226,7 @@ class AnalyzeJuliet(object):
         with open(os.path.join(cwe_outdir, 'results.txt'), 'w') as fout:
             fout.write('Summary:\n')
             for result_type in results:
-                fout.write('\t%d %s detections   (%.2f)\n' % (len(results[result_type]), result_type,
+                fout.write('\t%d %s detections   (%.2f%%)\n' % (len(results[result_type]), result_type,
                                                               (float(len(results[result_type])) / float(num_tests)) * 100))
             fout.write('\nDetails:\n')
             for result_type in results:
