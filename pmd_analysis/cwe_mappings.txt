@@ -1,2 +1,3 @@
-134,net.sourceforge.pmd.lang.java.rule.cwe.UncontrolledFormatStringRule,3
-114,net.sourceforge.pmd.lang.java.rule.cwe.ProcessControlRule,3
+134,net.sourceforge.pmd.lang.java.rule.cwe.UncontrolledFormatStringRule
+114,net.sourceforge.pmd.lang.java.rule.cwe.ProcessControlRule
+396,category/java/design.xml/AvoidCatchingGenericException

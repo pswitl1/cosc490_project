@@ -4,8 +4,6 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
     <rule name="cwe_name"
-          message="cwe_name"
           class="rule_class">
-        <priority>priority_number</priority>
     </rule>
 </ruleset>

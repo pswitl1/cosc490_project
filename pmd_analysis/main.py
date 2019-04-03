@@ -98,14 +98,17 @@ def parse_cwe_mappings_file(cwe_mappings_file):
     with open(cwe_mappings_file, 'r') as fin:
         for idx, line in enumerate(fin.readlines()):
             error = False
+            line = line.replace(" ", "")
+            if len(line) > 0:
+                if line[:1] == "#":
+                    continue
             line = line.split(',')
             cwe = 0
             priority = 0
             pmd_rule = ''
-            if len(line) == 3:
+            if len(line) == 2:
                 try:
                     cwe = int(line[0])
-                    priority = int(line[2])
                 except:
                     error = True
                 pmd_rule = line[1]
@@ -116,7 +119,7 @@ def parse_cwe_mappings_file(cwe_mappings_file):
             if error:
                 sys.exit('error in cwe_mappings file: "%s", line: "%d", must be in the following format:'
                          '"cwe_number,pmd_rule_path,priority"' % (cwe_mappings_file, idx))
-            cwe_mappings.append([cwe, pmd_rule, priority])
+            cwe_mappings.append([cwe, pmd_rule])
 
     if len(cwe_mappings) == 0:
         sys.exit('error in cwe_mappings file: "%s", empty file.' % cwe_mappings_file)

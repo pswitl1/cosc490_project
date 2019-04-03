@@ -28,7 +28,6 @@ class AnalyzeJuliet(object):
             # get info
             cwe_id = cwe[0]
             pmd_rule = cwe[1]
-            priority = cwe[2]
             cwe_name = self.get_cwe_name(cwe_id)
 
             # make cwe outdir
@@ -36,7 +35,7 @@ class AnalyzeJuliet(object):
             os.makedirs(cwe_outdir)
 
             # create the ruleset
-            self.create_ruleset(cwe_name, pmd_rule, priority, cwe_outdir)
+            self.create_ruleset(cwe_name, pmd_rule, cwe_outdir)
 
             # copy source files into seperate dir
             self.copy_cwe_source_files(cwe_id, cwe_name, cwe_outdir)
@@ -91,7 +90,7 @@ class AnalyzeJuliet(object):
 
         return name
 
-    def create_ruleset(self, cwe_name, pmd_rule, priority, cwe_outdir):
+    def create_ruleset(self, cwe_name, pmd_rule, cwe_outdir):
         """
         Create the specific ruleset for a cwe, use the ruleset template
 
@@ -102,10 +101,12 @@ class AnalyzeJuliet(object):
         :return: None
         """
         replace_map = {
-            'cwe_name': cwe_name,
-            'rule_class': pmd_rule,
-            'priority_number': str(priority)
+            'cwe_name': cwe_name.strip(),
+            'rule_class': pmd_rule.strip(),
         }
+
+        if pmd_rule.find('/') > -1:
+            replace_map['class='] = 'ref='
         ruleset_file = os.path.join(cwe_outdir, 'ruleset.xml')
         with open(self.ruleset_template, 'r') as fin:
             with open(ruleset_file, 'w') as fout:
