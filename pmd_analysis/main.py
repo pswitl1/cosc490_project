@@ -21,6 +21,7 @@ def main():
     parser.add_argument('--outdir', help='path/to/outdir', type=str, default='outdir')
     parser.add_argument('--mp', help='max number of pmd processes to spawn at one time', type=int, default=25)
     parser.add_argument('--keep_copied_source', help='keep copied source files', action='store_true')
+    parser.add_argument('--use_multifile_tests', help='include tests with multiple files', action='store_true')
     parser.add_argument('-q', '--quiet', help='supress terminal output', action='store_true')
     args = validate_args(parser.parse_args())
 
@@ -33,6 +34,7 @@ def main():
         args.outdir,
         args.mp,
         not args.keep_copied_source,
+        not args.use_multifile_tests,
         args.quiet)
 
 

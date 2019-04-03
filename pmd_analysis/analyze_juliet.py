@@ -9,7 +9,8 @@ import subprocess
 
 class AnalyzeJuliet(object):
 
-    def __init__(self, juliet_dir, cwe_mappings, ruleset_template, pmd_exec, outdir, max_processes, remove_source_output, quiet):
+    def __init__(self, juliet_dir, cwe_mappings, ruleset_template, pmd_exec, outdir, max_processes,
+                 remove_source_output, single_file_tests_only, quiet):
         super(AnalyzeJuliet).__init__()
 
         start = time.time()
@@ -40,6 +41,9 @@ class AnalyzeJuliet(object):
             # copy source files into seperate dir
             self.copy_cwe_source_files(cwe_id, cwe_name, cwe_outdir)
 
+            if single_file_tests_only:
+                AnalyzeJuliet.remove_multifile_tests(cwe_outdir)
+
             # run pmd for all tests in this cwe
             self.run_pmd(cwe_outdir, max_processes)
 
@@ -66,7 +70,8 @@ class AnalyzeJuliet(object):
                         fout.write('%s\n' % os.path.basename(cwe_outdir))
                         with open(results_file, 'r') as fin:
                             lines = fin.readlines()
-                            fout.write('%s%s\n' % (lines[1], lines[2]))
+                            if len(lines) >= 4:
+                                fout.write('%s%s%s\n' % (lines[1], lines[2], lines[3]))
 
     def get_cwe_name(self, cwe_id):
         """
@@ -147,6 +152,20 @@ class AnalyzeJuliet(object):
             if not os.path.isdir(dst):
                 os.makedirs(dst)
             shutil.copy(case, dst)
+
+    @staticmethod
+    def remove_multifile_tests(cwe_outdir):
+        """
+        Remove test dirs with multiple test files
+
+        :param cwe_outdir: outdir of cwe
+        :return: None
+        """
+        for test_dir in os.listdir(os.path.join(cwe_outdir, 'src')):
+            test_dir = os.path.join(cwe_outdir, 'src', test_dir)
+            if os.path.isdir(test_dir):
+                if len(os.listdir(test_dir)) > 1:
+                    shutil.rmtree(test_dir)
 
     def run_pmd(self, cwe_outdir, max_processes):
         """
