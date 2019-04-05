@@ -2,3 +2,4 @@
 114,net.sourceforge.pmd.lang.java.rule.cwe.ProcessControlRule
 396,category/java/design.xml/AvoidCatchingGenericException
 15,net.sourceforge.pmd.lang.java.rule.cwe.ExternalControlOfSystemOrConfigurationSettingRule
+193,net.sourceforge.pmd.lang.java.rule.cwe.OffByOneErrorRule

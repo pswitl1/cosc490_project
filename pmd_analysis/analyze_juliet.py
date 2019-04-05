@@ -38,10 +38,11 @@ class AnalyzeJuliet(object):
             self.create_ruleset(cwe_name, pmd_rule, cwe_outdir)
 
             # copy source files into seperate dir
-            self.copy_cwe_source_files(cwe_id, cwe_name, cwe_outdir)
+            self.copy_cwe_source_files(cwe_name, cwe_outdir)
 
+            number_of_multifile_tests = 0
             if single_file_tests_only:
-                AnalyzeJuliet.remove_multifile_tests(cwe_outdir)
+                number_of_multifile_tests = AnalyzeJuliet.remove_multifile_tests(cwe_outdir)
 
             # run pmd for all tests in this cwe
             self.run_pmd(cwe_outdir, max_processes)
@@ -51,26 +52,12 @@ class AnalyzeJuliet(object):
                 shutil.rmtree(os.path.join(cwe_outdir, 'src'))
 
             # analyze all tests from this cwe
-            AnalyzeJuliet.analyze_cwe(cwe_outdir)
+            AnalyzeJuliet.analyze_cwe(cwe_outdir, number_of_multifile_tests)
 
         self.analyze_all()
 
         # time
         print('\nAnalyzeJuliet took %.2f seconds to complete.' % (time.time() - start))
-
-    def analyze_all(self):
-        with open(os.path.join(self.outdir, 'results.txt'), 'w') as fout:
-            fout.write('CWE Results\n\n')
-            for cwe_outdir in os.listdir(self.outdir):
-                cwe_outdir = os.path.join(self.outdir, cwe_outdir)
-                if os.path.isdir(cwe_outdir):
-                    results_file = os.path.join(cwe_outdir, 'results.txt')
-                    if os.path.exists(results_file):
-                        fout.write('%s\n' % os.path.basename(cwe_outdir))
-                        with open(results_file, 'r') as fin:
-                            lines = fin.readlines()
-                            if len(lines) >= 4:
-                                fout.write('%s%s%s\n' % (lines[1], lines[2], lines[3]))
 
     def get_cwe_name(self, cwe_id):
         """
@@ -96,7 +83,6 @@ class AnalyzeJuliet(object):
 
         :param cwe_name: name of cwe
         :param pmd_rule: the pmd rule class
-        :param priority: priority of the rule
         :param cwe_outdir: the cwe out directory
         :return: None
         """
@@ -116,11 +102,10 @@ class AnalyzeJuliet(object):
                             line = line.replace(key, replace_map[key])
                     fout.write(line)
 
-    def copy_cwe_source_files(self, cwe_id, name, cwe_outdir):
+    def copy_cwe_source_files(self, name, cwe_outdir):
         """
         PMD needs a single directory with source files, so copy each test's source file(s) into one directory.
 
-        :param cwe_id: id of cwe source files to look for
         :param name: cwe name of source files to look for
         :param cwe_outdir: outdir to copy to
         :return: None
@@ -160,13 +145,17 @@ class AnalyzeJuliet(object):
         Remove test dirs with multiple test files
 
         :param cwe_outdir: outdir of cwe
-        :return: None
+        :return: Number of tests deleted
         """
+        multifile_test_counter = 0
         for test_dir in os.listdir(os.path.join(cwe_outdir, 'src')):
             test_dir = os.path.join(cwe_outdir, 'src', test_dir)
             if os.path.isdir(test_dir):
                 if len(os.listdir(test_dir)) > 1:
                     shutil.rmtree(test_dir)
+                    multifile_test_counter += 1
+
+        return multifile_test_counter
 
     def run_pmd(self, cwe_outdir, max_processes):
         """
@@ -185,24 +174,35 @@ class AnalyzeJuliet(object):
 
             # build command
             if os.path.isdir(src_dir):
-                cmd = []
-                cmd.append(self.pmd_exec)
-                cmd.append('-d')
-                cmd.append(src_dir)
-                cmd.append('-R')
-                cmd.append(os.path.join(cwe_outdir, 'ruleset.xml'))
-                cmd.append('-f')
-                cmd.append('csv')
-                cmd.append('-property')
-                cmd.append('package=false')
-                cmd.append('-property')
-                cmd.append('priority=false')
-                cmd.append('-property')
-                cmd.append('desc=false')
-                cmd.append('-property')
-                cmd.append('ruleSet=false')
-                cmd.append('-no-cache')
-                cmd.append('-shortnames')
+                cmd = list([
+                    self.pmd_exec,
+                    '-d', src_dir,
+                    '-R', os.path.join(cwe_outdir, 'ruleset.xml'),
+                    '-f', 'csv',
+                    '-property', 'package=false',
+                    '-property', 'priority=false',
+                    '-property', 'desc=false',
+                    '-property', 'ruleSet=false',
+                    '-no-cache',
+                    '-shortnames'])
+
+                # cmd.append(self.pmd_exec)
+                # cmd.append('-d')
+                # cmd.append(src_dir)
+                # cmd.append('-R')
+                # cmd.append(os.path.join(cwe_outdir, 'ruleset.xml'))
+                # cmd.append('-f')
+                # cmd.append('csv')
+                # cmd.append('-property')
+                # cmd.append('package=false')
+                # cmd.append('-property')
+                # cmd.append('priority=false')
+                # cmd.append('-property')
+                # cmd.append('desc=false')
+                # cmd.append('-property')
+                # cmd.append('ruleSet=false')
+                # cmd.append('-no-cache')
+                # cmd.append('-shortnames')
                 fname = '%s.csv'.replace('src_', '') % os.path.basename(src_dir)
 
                 # spawn processes, with a max number
@@ -210,20 +210,21 @@ class AnalyzeJuliet(object):
                 idx += 1
 
                 if len(processes) == max_processes:
-                    while processes != []:
+                    while processes:
                         processes[0].wait()
                         processes.pop(0)
 
-        while processes != []:
+        while processes:
             processes[0].wait()
             processes.pop(0)
 
     @staticmethod
-    def analyze_cwe(cwe_outdir):
+    def analyze_cwe(cwe_outdir, number_of_multifile_tests):
         """
         Analyze tests in the given cwe_outdir
 
         :param cwe_outdir: cwe outdir to analyze
+        :param number_of_multifile_tests: number of multifile tests that were skipped
         :return: None, outputs results.txt in cwe_outdir
         """
 
@@ -246,10 +247,31 @@ class AnalyzeJuliet(object):
         with open(os.path.join(cwe_outdir, 'results.txt'), 'w') as fout:
             fout.write('Summary:\n')
             for result_type in results:
-                fout.write('\t%d %s detections   (%.2f%%)\n' % (len(results[result_type]), result_type,
-                                                              (float(len(results[result_type])) / float(num_tests)) * 100))
+                fout.write('\t%d %s detections   (%.2f%%)\n' %
+                           (len(results[result_type]), result_type, (float(len(results[result_type])) /
+                                                                     float(num_tests)) * 100))
+            fout.write('\t%d Multi-file tests skipped\n' % number_of_multifile_tests)
             fout.write('\nDetails:\n')
             for result_type in results:
                 fout.write('\t%d %s detections\n' % (len(results[result_type]), result_type))
                 for result in results[result_type]:
                     fout.write('\t\t%s\n' % result)
+
+    def analyze_all(self):
+        """
+        Copy all the summaries into one results file
+
+        :return: None
+        """
+        with open(os.path.join(self.outdir, 'results.txt'), 'w') as fout:
+            fout.write('CWE Results\n\n')
+            for cwe_outdir in os.listdir(self.outdir):
+                cwe_outdir = os.path.join(self.outdir, cwe_outdir)
+                if os.path.isdir(cwe_outdir):
+                    results_file = os.path.join(cwe_outdir, 'results.txt')
+                    if os.path.exists(results_file):
+                        fout.write('%s\n' % os.path.basename(cwe_outdir))
+                        with open(results_file, 'r') as fin:
+                            lines = fin.readlines()
+                            if len(lines) >= 5:
+                                fout.write('%s%s%s%s\n' % (lines[1], lines[2], lines[3], lines[4]))
