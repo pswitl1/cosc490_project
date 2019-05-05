@@ -1,0 +1,61 @@
+Summary:
+	51 successful detections   (100.00%)
+	0 failed detections   (0.00%)
+	0 extra detections   (0.00%)
+	0 Multi-file tests skipped
+
+Details:
+	51 successful detections
+		src_for_16
+		src_for_02
+		src_for_03
+		src_for_17
+		src_for_01
+		src_for_15
+		src_for_14
+		src_for_04
+		src_for_10
+		src_for_11
+		src_for_05
+		src_for_13
+		src_for_07
+		src_for_06
+		src_for_12
+		src_do_08
+		src_do_09
+		src_while_09
+		src_while_08
+		src_do_02
+		src_while_05
+		src_do_16
+		src_while_11
+		src_while_10
+		src_do_17
+		src_while_04
+		src_do_03
+		src_do_15
+		src_while_12
+		src_do_01
+		src_while_06
+		src_while_07
+		src_while_13
+		src_do_14
+		src_do_10
+		src_while_17
+		src_do_04
+		src_while_03
+		src_while_02
+		src_do_05
+		src_while_16
+		src_do_11
+		src_do_07
+		src_do_13
+		src_while_14
+		src_while_15
+		src_do_12
+		src_while_01
+		src_do_06
+		src_for_08
+		src_for_09
+	0 failed detections
+	0 extra detections

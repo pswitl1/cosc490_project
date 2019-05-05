@@ -1,0 +1,26 @@
+Summary:
+	1 successful detections   (6.25%)
+	15 failed detections   (93.75%)
+	0 extra detections   (0.00%)
+	0 Multi-file tests skipped
+
+Details:
+	1 successful detections
+		src_false_01
+	15 failed detections
+		src_static_final_five_01
+		src_n_equal_n_minus_one_01
+		src_static_final_01
+		src_class_getClass_equal_01
+		src_private_return_01
+		src_private_static_final_01
+		src_static_01
+		src_string_equals_01
+		src_n_less_int_min_01
+		src_private_five_01
+		src_private_static_final_five_01
+		src_static_five_01
+		src_static_return_01
+		src_two_equals_three_01
+		src_private_01
+	0 extra detections

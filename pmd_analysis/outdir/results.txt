@@ -1,0 +1,90 @@
+CWE Results
+
+Custom CWE Rules:
+
+CWE134_Uncontrolled_Format_String
+	396 successful detections   (100.00%)
+	0 failed detections   (0.00%)
+	0 extra detections   (0.00%)
+	270 Multi-file tests skipped
+
+CWE586_Explicit_Call_to_Finalize
+	17 successful detections   (100.00%)
+	0 failed detections   (0.00%)
+	0 extra detections   (0.00%)
+	0 Multi-file tests skipped
+
+CWE478_Missing_Default_Case_in_Switch
+	17 successful detections   (100.00%)
+	0 failed detections   (0.00%)
+	0 extra detections   (0.00%)
+	0 Multi-file tests skipped
+
+CWE481_Assigning_Instead_of_Comparing
+	17 successful detections   (100.00%)
+	0 failed detections   (0.00%)
+	0 extra detections   (0.00%)
+	0 Multi-file tests skipped
+
+CWE129_Improper_Validation_of_Array_Index
+	1144 successful detections   (72.22%)
+	440 failed detections   (27.78%)
+	0 extra detections   (0.00%)
+	1080 Multi-file tests skipped
+
+CWE193_Off_by_One_Error
+	51 successful detections   (100.00%)
+	0 failed detections   (0.00%)
+	0 extra detections   (0.00%)
+	0 Multi-file tests skipped
+
+CWE584_Return_in_Finally_Block
+	17 successful detections   (100.00%)
+	0 failed detections   (0.00%)
+	0 extra detections   (0.00%)
+	0 Multi-file tests skipped
+
+CWE15_External_Control_of_System_or_Configuration_Setting
+	264 successful detections   (100.00%)
+	0 failed detections   (0.00%)
+	0 extra detections   (0.00%)
+	180 Multi-file tests skipped
+
+CWE114_Process_Control
+	17 successful detections   (100.00%)
+	0 failed detections   (0.00%)
+	0 extra detections   (0.00%)
+	0 Multi-file tests skipped
+
+CWE398_Poor_Code_Quality
+	137 successful detections   (100.00%)
+	0 failed detections   (0.00%)
+	0 extra detections   (0.00%)
+	0 Multi-file tests skipped
+
+
+Built In Rules:
+
+CWE396_Catch_Generic_Exception
+	17 successful detections   (50.00%)
+	17 failed detections   (50.00%)
+	0 extra detections   (0.00%)
+	0 Multi-file tests skipped
+
+CWE563_Unused_Variable
+	128 successful detections   (62.14%)
+	78 failed detections   (37.86%)
+	0 extra detections   (0.00%)
+	12 Multi-file tests skipped
+
+CWE570_Expression_Always_False
+	1 successful detections   (6.25%)
+	15 failed detections   (93.75%)
+	0 extra detections   (0.00%)
+	0 Multi-file tests skipped
+
+CWE571_Expression_Always_True
+	1 successful detections   (6.25%)
+	15 failed detections   (93.75%)
+	0 extra detections   (0.00%)
+	0 Multi-file tests skipped

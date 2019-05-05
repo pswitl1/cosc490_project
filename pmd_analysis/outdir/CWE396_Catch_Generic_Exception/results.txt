@@ -1,0 +1,44 @@
+Summary:
+	17 successful detections   (50.00%)
+	17 failed detections   (50.00%)
+	0 extra detections   (0.00%)
+	0 Multi-file tests skipped
+
+Details:
+	17 successful detections
+		src_Exception_06
+		src_Exception_12
+		src_Exception_13
+		src_Exception_07
+		src_Exception_11
+		src_Exception_05
+		src_Exception_04
+		src_Exception_10
+		src_Exception_14
+		src_Exception_01
+		src_Exception_15
+		src_Exception_03
+		src_Exception_17
+		src_Exception_16
+		src_Exception_02
+		src_Exception_09
+		src_Exception_08
+	17 failed detections
+		src_Throwable_05
+		src_Throwable_11
+		src_Throwable_10
+		src_Throwable_04
+		src_Throwable_12
+		src_Throwable_06
+		src_Throwable_07
+		src_Throwable_13
+		src_Throwable_17
+		src_Throwable_03
+		src_Throwable_02
+		src_Throwable_16
+		src_Throwable_14
+		src_Throwable_15
+		src_Throwable_01
+		src_Throwable_09
+		src_Throwable_08
+	0 extra detections

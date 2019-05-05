@@ -1,0 +1,27 @@
+Summary:
+	17 successful detections   (100.00%)
+	0 failed detections   (0.00%)
+	0 extra detections   (0.00%)
+	0 Multi-file tests skipped
+
+Details:
+	17 successful detections
+		src_basic_08
+		src_basic_09
+		src_basic_15
+		src_basic_01
+		src_basic_14
+		src_basic_02
+		src_basic_16
+		src_basic_17
+		src_basic_03
+		src_basic_07
+		src_basic_13
+		src_basic_12
+		src_basic_06
+		src_basic_10
+		src_basic_04
+		src_basic_05
+		src_basic_11
+	0 failed detections
+	0 extra detections
