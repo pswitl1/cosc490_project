@@ -1,10 +1,19 @@
-#134,net.sourceforge.pmd.lang.java.rule.cwe.UncontrolledFormatStringRule
-#114,net.sourceforge.pmd.lang.java.rule.cwe.ProcessControlRule
-#396,category/java/design.xml/AvoidCatchingGenericException
-#15,net.sourceforge.pmd.lang.java.rule.cwe.ExternalControlOfSystemOrConfigurationSettingRule
-#193,net.sourceforge.pmd.lang.java.rule.cwe.OffByOneErrorRule
-#398,net.sourceforge.pmd.lang.java.rule.cwe.PoorCodeQualityRule
-#563,category/java/bestpractices.xml/UnusedLocalVariable
-#570,category/java/errorprone.xml/UnconditionalIfStatement
-#571,category/java/errorprone.xml/UnconditionalIfStatement
+# Custom rules
+#
+15,net.sourceforge.pmd.lang.java.rule.cwe.ExternalControlOfSystemOrConfigurationSettingRule
+114,net.sourceforge.pmd.lang.java.rule.cwe.ProcessControlRule
 129,net.sourceforge.pmd.lang.java.rule.cwe.ImproperValidationOfArrayIndex
+134,net.sourceforge.pmd.lang.java.rule.cwe.UncontrolledFormatStringRule
+193,net.sourceforge.pmd.lang.java.rule.cwe.OffByOneErrorRule
+398,net.sourceforge.pmd.lang.java.rule.cwe.PoorCodeQualityRule
+478,net.sourceforge.pmd.lang.java.rule.cwe.MissingDefaultCaseInSwitchRule
+481,net.sourceforge.pmd.lang.java.rule.cwe.AssigningInsteadOfComparingRule
+584,net.sourceforge.pmd.lang.java.rule.cwe.ReturnInFinallyBlockRule
+586,net.sourceforge.pmd.lang.java.rule.cwe.ExplicitCallToFinalizeRule
+#
+# Rules built in to PMD
+#
+396,category/java/design.xml/AvoidCatchingGenericException
+563,category/java/bestpractices.xml/UnusedLocalVariable
+570,category/java/errorprone.xml/UnconditionalIfStatement
+571,category/java/errorprone.xml/UnconditionalIfStatement

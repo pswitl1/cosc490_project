@@ -132,6 +132,8 @@ class AnalyzeJuliet(object):
             case_base = os.path.basename(case)
             suffix = case_base[case_base.index(name) + len(name):]
             digit_search = re.search('\d', suffix)
+            if not digit_search:
+                continue
             test_number = suffix[digit_search.start(): digit_search.end() + 1]
             test_name = suffix[2:digit_search.start() - 1]
             dst = os.path.join(cwe_outdir, 'src', 'src_%s_%s' % (test_name, test_number))
