@@ -1,5 +1,10 @@
-134,net.sourceforge.pmd.lang.java.rule.cwe.UncontrolledFormatStringRule
-114,net.sourceforge.pmd.lang.java.rule.cwe.ProcessControlRule
-396,category/java/design.xml/AvoidCatchingGenericException
-15,net.sourceforge.pmd.lang.java.rule.cwe.ExternalControlOfSystemOrConfigurationSettingRule
-193,net.sourceforge.pmd.lang.java.rule.cwe.OffByOneErrorRule
+#134,net.sourceforge.pmd.lang.java.rule.cwe.UncontrolledFormatStringRule
+#114,net.sourceforge.pmd.lang.java.rule.cwe.ProcessControlRule
+#396,category/java/design.xml/AvoidCatchingGenericException
+#15,net.sourceforge.pmd.lang.java.rule.cwe.ExternalControlOfSystemOrConfigurationSettingRule
+#193,net.sourceforge.pmd.lang.java.rule.cwe.OffByOneErrorRule
+#398,net.sourceforge.pmd.lang.java.rule.cwe.PoorCodeQualityRule
+#563,category/java/bestpractices.xml/UnusedLocalVariable
+#570,category/java/errorprone.xml/UnconditionalIfStatement
+#571,category/java/errorprone.xml/UnconditionalIfStatement
+129,net.sourceforge.pmd.lang.java.rule.cwe.ImproperValidationOfArrayIndex

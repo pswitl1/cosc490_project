@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="77524fc0-dc0f-4bd9-adef-d3f4f35aafd1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/pmd/pmd-bin-6.12.0/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies/pmd/pmd-bin-6.12.0/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/pmd/pmd-bin-6.12.0/bin/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies/pmd/pmd-bin-6.12.0/bin/run.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pmd_analysis/analyze_juliet.py" beforeDir="false" afterPath="$PROJECT_DIR$/pmd_analysis/analyze_juliet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pmd_analysis/cwe_mappings.txt" beforeDir="false" afterPath="$PROJECT_DIR$/pmd_analysis/cwe_mappings.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pmd_analysis/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/pmd_analysis/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pmd_analysis/ruleset_template.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pmd_analysis/ruleset_template.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,59 +22,56 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pmd_analysis/analyze_juliet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="43" column="38" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
-              <folding>
-                <element signature="e#42#51#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="2700">
+              <caret line="185" selection-start-line="185" selection-end-line="185" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pmd_analysis/cwe_mappings.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="1" selection-start-column="1" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pmd_analysis/outdir/results.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pmd_analysis/outdir/CWE129_Improper_Validation_of_Array_Index/results.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-16888" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE129_Improper_Validation_of_Array_Index/s04/CWE129_Improper_Validation_of_Array_Index__PropertiesFile_array_size_01.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="270">
+              <caret line="42" column="15" lean-forward="true" selection-end-line="215" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pmd_analysis/main.py">
+        <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE129_Improper_Validation_of_Array_Index/s05/CWE129_Improper_Validation_of_Array_Index__URLConnection_array_read_check_min_02.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
-              <folding>
-                <element signature="e#42#51#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="15">
+              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__Environment_format_45.java">
+        <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__connect_tcp_01.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__connect_tcp_format_31.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="47" selection-end-line="245" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__Environment_format_31.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="33" column="9" selection-end-line="112" />
+            <state relative-caret-position="105">
+              <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -113,25 +114,25 @@
         <option value="$PROJECT_DIR$/pmd_analysis/ruleset_template.xml" />
         <option value="$PROJECT_DIR$/pmd_analysis/analyze.py" />
         <option value="$PROJECT_DIR$/results.txt" />
-        <option value="$PROJECT_DIR$/pmd_analysis/cwe_mappings.txt" />
-        <option value="$PROJECT_DIR$/pmd_analysis/main.py" />
-        <option value="$PROJECT_DIR$/pmd_analysis/analyze_juliet.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/pmd_analysis/outdir/CWE134_Uncontrolled_Format_String/src/src_connect_tcp_printf_45/CWE134_Uncontrolled_Format_String__connect_tcp_printf_45.java" />
+        <option value="$PROJECT_DIR$/pmd_analysis/main.py" />
+        <option value="$PROJECT_DIR$/pmd_analysis/analyze_juliet.py" />
+        <option value="$PROJECT_DIR$/pmd_analysis/cwe_mappings.txt" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="8" />
-    <option name="y" value="90" />
-    <option name="width" value="1920" />
-    <option name="height" value="1007" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="width" value="1360" />
+    <option name="height" value="768" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -142,6 +143,59 @@
             <path>
               <item name="cosc490_project" type="b2602c69:ProjectViewProjectNode" />
               <item name="cosc490_project" type="462c0819:PsiDirectoryNode" />
+              <item name="juliet_test_cases" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cosc490_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cosc490_project" type="462c0819:PsiDirectoryNode" />
+              <item name="juliet_test_cases" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cosc490_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cosc490_project" type="462c0819:PsiDirectoryNode" />
+              <item name="juliet_test_cases" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="testcases" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cosc490_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cosc490_project" type="462c0819:PsiDirectoryNode" />
+              <item name="juliet_test_cases" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="testcases" type="462c0819:PsiDirectoryNode" />
+              <item name="CWE129_Improper_Validation_of_Array_Index" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cosc490_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cosc490_project" type="462c0819:PsiDirectoryNode" />
+              <item name="juliet_test_cases" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="testcases" type="462c0819:PsiDirectoryNode" />
+              <item name="CWE129_Improper_Validation_of_Array_Index" type="462c0819:PsiDirectoryNode" />
+              <item name="s03" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cosc490_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cosc490_project" type="462c0819:PsiDirectoryNode" />
+              <item name="juliet_test_cases" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="testcases" type="462c0819:PsiDirectoryNode" />
+              <item name="CWE129_Improper_Validation_of_Array_Index" type="462c0819:PsiDirectoryNode" />
+              <item name="s04" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cosc490_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cosc490_project" type="462c0819:PsiDirectoryNode" />
+              <item name="juliet_test_cases" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="testcases" type="462c0819:PsiDirectoryNode" />
+              <item name="CWE129_Improper_Validation_of_Array_Index" type="462c0819:PsiDirectoryNode" />
+              <item name="s05" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cosc490_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cosc490_project" type="462c0819:PsiDirectoryNode" />
               <item name="pmd_analysis" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -155,21 +209,19 @@
               <item name="cosc490_project" type="462c0819:PsiDirectoryNode" />
               <item name="pmd_analysis" type="462c0819:PsiDirectoryNode" />
               <item name="outdir" type="462c0819:PsiDirectoryNode" />
-              <item name="CWE134_Uncontrolled_Format_String" type="462c0819:PsiDirectoryNode" />
+              <item name="CWE129_Improper_Validation_of_Array_Index" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554254790672" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pmd" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556745819549" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -226,23 +278,27 @@
       <workItem from="1553975462041" duration="630000" />
       <workItem from="1554251390729" duration="1507000" />
       <workItem from="1554253990762" duration="799000" />
+      <workItem from="1556209841853" duration="1027000" />
+      <workItem from="1556727312358" duration="8532000" />
+      <workItem from="1557081323585" duration="663000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69592000" />
+    <option name="totallyTimeSpent" value="79814000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.40938166" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32747602" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -250,7 +306,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.53737813" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.17722772" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" />
@@ -271,227 +327,330 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE248_Uncaught_Exception/CWE248_Uncaught_Exception__Error_01.java</url>
-          <line>29</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pmd_analysis/outdir/CWE134_Uncontrolled_Format_String/results/src_Environment_format_16.csv" />
-    <entry file="file://$PROJECT_DIR$/pmd_analysis/outdir/CWE134_Uncontrolled_Format_String/results/src_Environment_format_06.csv" />
-    <entry file="file://$PROJECT_DIR$/pmd_analysis/outdir/CWE134_Uncontrolled_Format_String/results/src_Environment_format_72.csv" />
-    <entry file="file://$PROJECT_DIR$/pmd_analysis/outdir/CWE134_Uncontrolled_Format_String/results/src_Environment_format_67.csv" />
-    <entry file="file://$PROJECT_DIR$/pmd_analysis/outdir/CWE134_Uncontrolled_Format_String/results/src_Environment_format_15.csv" />
-    <entry file="file://$PROJECT_DIR$/pmd_analysis/outdir/CWE134_Uncontrolled_Format_String/results/src_Environment_format_13.csv" />
-    <entry file="file://$PROJECT_DIR$/pmd_analysis/outdir/CWE134_Uncontrolled_Format_String/results/src_Environment_format_11.csv" />
-    <entry file="file://$PROJECT_DIR$/pmd_analysis/outdir/CWE134_Uncontrolled_Format_String/results/src_Environment_format_09.csv" />
-    <entry file="file://$PROJECT_DIR$/pmd_analysis/outdir/CWE134_Uncontrolled_Format_String/results/src_Environment_format_08.csv" />
-    <entry file="file://$PROJECT_DIR$/pmd_analysis/outdir/CWE134_Uncontrolled_Format_String/results/src_Environment_format_07.csv" />
-    <entry file="file://$PROJECT_DIR$/pmd_analysis/outdir/CWE134_Uncontrolled_Format_String/results/src_Environment_format_05.csv" />
-    <entry file="file://$PROJECT_DIR$/pmd_analysis/outdir/CWE134_Uncontrolled_Format_String/src_listen_tcp_printf_81/CWE134_Uncontrolled_Format_String__listen_tcp_printf_81_bad.java" />
-    <entry file="file://$PROJECT_DIR$/pmd_analysis/outdir/CWE134_Uncontrolled_Format_String/results/src_console_readLine_format_52.csv" />
-    <entry file="file://$PROJECT_DIR$/pmd_analysis/outdir/CWE134_Uncontrolled_Format_String/results/src_console_readLine_format_41.csv" />
-    <entry file="file://$PROJECT_DIR$/pmd_analysis/outdir/CWE134_Uncontrolled_Format_String/results/src_console_readLine_format_13.csv" />
-    <entry file="file://$PROJECT_DIR$/pmd_analysis/outdir/CWE134_Uncontrolled_Format_String/results/src_database_format_17.csv" />
-    <entry file="file://$PROJECT_DIR$/pmd_analysis/outdir/CWE134_Uncontrolled_Format_String/results/src_database_format_31.csv" />
-    <entry file="file://$PROJECT_DIR$/pmd_analysis/outdir/CWE134_Uncontrolled_Format_String/results/src_connect_tcp_format_31.csv" />
-    <entry file="file://$PROJECT_DIR$/pmd_analysis/outdir/CWE134_Uncontrolled_Format_String/results/src_connect_tcp_format_41.csv" />
-    <entry file="file://$PROJECT_DIR$/pmd_analysis/outdir/CWE134_Uncontrolled_Format_String/results/src_connect_tcp_format_42.csv" />
-    <entry file="file://$PROJECT_DIR$/pmd_analysis/results.txt" />
-    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__PropertiesFile_format_06.java">
+    <entry file="file://$PROJECT_DIR$/pmd_analysis/outdir/CWE134_Uncontrolled_Format_String/src/src_connect_tcp_printf_42/CWE134_Uncontrolled_Format_String__connect_tcp_printf_42.java" />
+    <entry file="file://$PROJECT_DIR$/pmd_analysis/outdir/CWE134_Uncontrolled_Format_String/src/src_connect_tcp_printf_45/CWE134_Uncontrolled_Format_String__connect_tcp_printf_45.java" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="84" column="38" selection-start-line="84" selection-start-column="34" selection-end-line="84" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__connect_tcp_format_01.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__Environment_format_01.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="22" selection-start-line="22" selection-end-line="36" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE382_Use_of_System_Exit/CWE382_Use_of_System_Exit__Servlet_Runtime_01.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pmd_analysis/ruleset_template.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pmd_analysis/outdir/CWE134_Uncontrolled_Format_String/ruleset.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="84" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pmd_analysis/outdir/CWE134_Uncontrolled_Format_String/results/src_console_readLine_printf_02.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cosc490_project.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__Environment_format_21.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="31" column="36" selection-end-line="153" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__connect_tcp_format_22a.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__connect_tcp_format_22b.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pmd_analysis/output/CWE134_Uncontrolled_Format_String/ruleset.xml" />
-    <entry file="file://$PROJECT_DIR$/results.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1839">
-          <caret line="332" column="22" selection-start-line="332" selection-end-line="333" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pmd_analysis/cwe_mappings.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__connect_tcp_format_42.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__Environment_format_42.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pmd_analysis/output/CWE114_Process_Control/results.txt" />
-    <entry file="file://$PROJECT_DIR$/pmd_analysis/output/results.txt" />
-    <entry file="file://$PROJECT_DIR$/pmd_analysis/output/CWE134_Uncontrolled_Format_String/results.txt" />
-    <entry file="file://$PROJECT_DIR$/pmd_analysis/outdir/CWE134_Uncontrolled_Format_String/results.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__Environment_format_45.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
+        <state relative-caret-position="285">
           <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__connect_tcp_format_31.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
+        <state relative-caret-position="375">
           <caret line="47" selection-end-line="245" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__Environment_format_31.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="270">
           <caret line="33" column="9" selection-end-line="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE398_Poor_Code_Quality/CWE398_Poor_Code_Quality__empty_case_01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="35" column="18" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE398_Poor_Code_Quality/CWE398_Poor_Code_Quality__empty_else_12.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE398_Poor_Code_Quality/CWE398_Poor_Code_Quality__empty_else_01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE398_Poor_Code_Quality/CWE398_Poor_Code_Quality__empty_for_01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE398_Poor_Code_Quality/CWE398_Poor_Code_Quality__empty_function_01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE398_Poor_Code_Quality/CWE398_Poor_Code_Quality__equals_02.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE398_Poor_Code_Quality/CWE398_Poor_Code_Quality__equals_01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE398_Poor_Code_Quality/CWE398_Poor_Code_Quality__equals_15.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE398_Poor_Code_Quality/CWE398_Poor_Code_Quality__semicolon_01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE23_Relative_Path_Traversal/build.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE23_Relative_Path_Traversal/CWE23_Relative_Path_Traversal__connect_tcp_01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1746">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE248_Uncaught_Exception/CWE248_Uncaught_Exception__Error_01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-26">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE369_Divide_by_Zero/s01/CWE369_Divide_by_Zero__float_connect_tcp_divide_01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-964">
+          <caret line="128" column="31" selection-start-line="128" selection-start-column="31" selection-end-line="128" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE398_Poor_Code_Quality/CWE398_Poor_Code_Quality__equals_09.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pmd_analysis/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
+        <state relative-caret-position="-162">
+          <caret line="18" column="72" selection-start-line="18" selection-start-column="72" selection-end-line="19" selection-end-column="89" />
           <folding>
             <element signature="e#42#51#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE582_Array_Public_Final_Static/CWE582_Array_Public_Final_Static__basic_01_bad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE582_Array_Public_Final_Static/CWE582_Array_Public_Final_Static__basic_01_good1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE571_Expression_Always_True/CWE571_Expression_Always_True__class_getClass_not_equal_01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE571_Expression_Always_True/CWE571_Expression_Always_True__private_static_final_01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE563_Unused_Variable/CWE563_Unused_Variable__unused_init_variable_int_01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE563_Unused_Variable/CWE563_Unused_Variable__unused_init_variable_int_12.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE563_Unused_Variable/CWE563_Unused_Variable__unused_value_StringBuilder_81_bad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE563_Unused_Variable/CWE563_Unused_Variable__unused_value_StringBuilder_15.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE563_Unused_Variable/CWE563_Unused_Variable__unused_value_StringBuilder_07.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juliet_test_cases/create_per_cwe_files.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juliet_test_cases/run_analysis_example_tool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-586" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juliet_test_cases/update_Main_java_ServletMain_java_and_web_xml.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE835_Infinite_Loop/CWE835_Infinite_Loop__do_01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-77">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE835_Infinite_Loop/CWE835_Infinite_Loop__for_01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE511_Logic_Time_Bomb/CWE511_Logic_Time_Bomb__counter_01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-92">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE511_Logic_Time_Bomb/CWE511_Logic_Time_Bomb__rand_01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE129_Improper_Validation_of_Array_Index/s01/CWE129_Improper_Validation_of_Array_Index__connect_tcp_array_read_check_max_74a.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1526">
+          <caret line="110" column="9" lean-forward="true" selection-start-line="110" selection-start-column="9" selection-end-line="110" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE129_Improper_Validation_of_Array_Index/s01/CWE129_Improper_Validation_of_Array_Index__connect_tcp_array_read_check_min_15.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="128" column="16" lean-forward="true" selection-start-line="128" selection-start-column="16" selection-end-line="128" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE129_Improper_Validation_of_Array_Index/s01/CWE129_Improper_Validation_of_Array_Index__connect_tcp_array_read_check_max_01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="238" column="8" lean-forward="true" selection-end-line="267" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE129_Improper_Validation_of_Array_Index/s01/CWE129_Improper_Validation_of_Array_Index__Environment_array_read_check_max_45.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE129_Improper_Validation_of_Array_Index/s01/CWE129_Improper_Validation_of_Array_Index__Environment_array_read_check_max_51a.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pmd_analysis/outdir/CWE398_Poor_Code_Quality/results/src_empty_block_01.csv" />
+    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE252_Unchecked_Return_Value/CWE252_Unchecked_Return_Value__FileInputStream_02.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-504">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pmd_analysis/analyze_juliet.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="43" column="38" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
-          <folding>
-            <element signature="e#42#51#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="2700">
+          <caret line="185" selection-start-line="185" selection-end-line="185" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pmd_analysis/outdir/CWE134_Uncontrolled_Format_String/src/src_connect_tcp_printf_21/CWE134_Uncontrolled_Format_String__connect_tcp_printf_21.java">
+    <entry file="file://$PROJECT_DIR$/pmd_analysis/cwe_mappings.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pmd_analysis/outdir/CWE134_Uncontrolled_Format_String/src/src_connect_tcp_printf_42/CWE134_Uncontrolled_Format_String__connect_tcp_printf_42.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="5" selection-end-line="242" />
-          <folding>
-            <element signature="e#0#7078#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pmd_analysis/outdir/CWE134_Uncontrolled_Format_String/src/src_connect_tcp_printf_45/CWE134_Uncontrolled_Format_String__connect_tcp_printf_45.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#7264#0" expanded="true" />
-          </folding>
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pmd_analysis/outdir/results.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__connect_tcp_01.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="105">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE129_Improper_Validation_of_Array_Index/s05/CWE129_Improper_Validation_of_Array_Index__URLConnection_array_read_check_min_02.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pmd_analysis/outdir/CWE129_Improper_Validation_of_Array_Index/results.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16888" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juliet_test_cases/src/testcases/CWE129_Improper_Validation_of_Array_Index/s04/CWE129_Improper_Validation_of_Array_Index__PropertiesFile_array_size_01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="42" column="15" lean-forward="true" selection-end-line="215" />
         </state>
       </provider>
     </entry>
